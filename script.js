@@ -4,6 +4,7 @@
         const navLinks = document.querySelectorAll('.nav-link');
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+                const navLogoImg = document.getElementById('nav-logo-img'); // Get the image element
 
         // Initial check in case of page refresh while scrolled
         checkScroll();
@@ -18,6 +19,9 @@
                 
                 logoText.classList.remove('text-white');
                 logoText.classList.add('text-navy');
+
+                // Switch to Colored Logo
+                if(navLogoImg) navLogoImg.src = "assets/logo.png";
                 
                 navLinks.forEach(link => {
                     link.classList.remove('text-gray-200');
@@ -34,6 +38,9 @@
                 
                 logoText.classList.add('text-white');
                 logoText.classList.remove('text-navy');
+
+                // Switch to White Logo
+                if(navLogoImg) navLogoImg.src = "assets/logo-white.png";
                 
                 navLinks.forEach(link => {
                     link.classList.add('text-gray-200');

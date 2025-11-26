@@ -45,6 +45,7 @@
 <span class="inline text-lg sm:text-3xl">Khayaban Consultants</span>
 </span>
                 </div>
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="nav-link text-gray-200 hover:text-blue font-medium transition">Home</a>
@@ -83,14 +84,14 @@
             <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
                 Your Gateway to <br> <span class="text-blue">Education in Türkiye</span>
             </h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-200 font-light">
+            <p class="text-lg md:text-xl mb-10 text-gray-200 font-light drop-shadow-lg">
                 Expert guidance for students in Pakistan seeking admission in top ranked Turkish universities.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://forms.gle/Xk86qP4LcqDXzwx99" class="bg-blue hover:bg-blue-dark text-white text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl transform hover:scale-105">
                     Book Consultation
                 </a>
-                <a href="#universities" class="bg-white hover:bg-gray-100 text-navy text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl">
+                <a href="#universities" class="bg-white hover:bg-gray-100 text-navy text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl hover:scale-105">
                     View Universities
                 </a>
             </div>
@@ -515,25 +516,41 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-navy text-gray-300 py-12 border-t border-navy-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-2xl font-heading font-bold text-white">
-                        <i class="fas fa-graduation-cap mr-2 text-blue"></i>Khayaban Consultants
+ <footer class="bg-navy text-gray-300 py-12 border-t border-navy-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            
+            <!-- Logo & Identity Section -->
+            <div class="mb-6 md:mb-0 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left">
+                
+                <!-- Logo Icon -->
+                <!-- 'mx-auto' centers it on mobile. 'md:mx-0' aligns left on desktop. -->
+                <img src="assets/logo-white.png" 
+                     alt="Khayaban Consultants Logo" 
+                     class="h-10 w-auto mb-1 md:mb-0 md:mr-3 mx-auto md:mx-0 block">
+                
+                <!-- Text Group -->
+                <div class="flex flex-col justify-center">
+                    <!-- Title: Tight leading to reduce vertical gap -->
+                    <span class="text-3xl font-heading font-bold text-white leading-none tracking-wide">
+                        Khayaban <br class="block md:hidden"> Consultants
                     </span>
-                    <p class="mt-2 text-sm">Empowering students since 2010.</p>
-                </div>
-                <div class="flex space-x-6 text-sm">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
                 </div>
             </div>
-            <div class="border-t border-navy-light mt-8 pt-8 text-center text-sm">
-                &copy; 2025 Khayaban Consultants. All rights reserved.
+
+            <!-- Links -->
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
             </div>
         </div>
-    </footer>
+
+        <!-- Copyright -->
+        <div class="border-t border-navy-light mt-8 pt-8 text-center text-sm text-gray-400">
+            &copy; 2025 Khayaban Consultants. All rights reserved.
+        </div>
+    </div>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

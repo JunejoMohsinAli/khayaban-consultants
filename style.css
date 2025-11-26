@@ -4,7 +4,7 @@
         }
 
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 31, 84, 0.7), rgba(0, 31, 84, 0.7)), url('https://images.unsplash.com/photo-1527838832700-5059252407fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-image: linear-gradient(rgba(0, 31, 84, 0.7), rgba(0, 31, 84, 0.218)),  url('assets/bg.avif');
             background-size: cover;
             background-position: center;
         }

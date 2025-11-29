@@ -1,538 +1,1020 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Khayaban Consultants provides expert guidance for students in Hyderabad and Pakistan seeking study visas and admission in top universities in Türkiye.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khayaban Consultants provides expert guidance for students in Hyderabad and Pakistan seeking study visas and admission in top universities in Türkiye."
+    />
     <title>Khayaban Consultants - Study in Türkiye</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Fonts: Montserrat (Headings) + Roboto (Body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body class="font-sans text-gray-800 bg-neutral-light">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans text-gray-800 bg-neutral-light">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 nav-transition bg-transparent py-2">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <span id="logo-text" class="text-3xl font-heading font-bold text-white nav-transition flex items-center">
-    <img id="nav-logo-img" 
-    src="assets/logo.png"
-         alt="Khayaban Consultants logo" 
-         class="h-10 mr-3">
-<span class="inline text-lg sm:text-3xl">Khayaban Consultants</span>
-</span>
-                </div>
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 nav-transition bg-transparent py-2"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo & Text Section -->
+          <div class="shrink-0 flex items-center">
+            <!-- Wrapper for Logo and Text Block -->
+            <span
+              id="logo-text"
+              class="flex items-center text-white nav-transition"
+            >
+              <img
+                id="nav-logo-img"
+                src="assets/logo.png"
+                alt="Khayaban Consultants logo"
+                class="h-10 mr-3"
+              />
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#home" class="nav-link text-gray-200 hover:text-blue font-medium transition">Home</a>
-                    <a href="#about" class="nav-link text-gray-200 hover:text-blue font-medium transition">About Us</a>
-                    <a href="#universities" class="nav-link text-gray-200 hover:text-blue font-medium transition">Universities</a>
-                    <a href="#reviews" class="nav-link text-gray-200 hover:text-blue font-medium transition">Reviews</a>
-                    <a href="#services" class="nav-link text-gray-200 hover:text-blue font-medium transition">Services</a>
-                    <a href="https://forms.gle/Xk86qP4LcqDXzwx99" class="bg-blue text-white px-5 py-2 rounded-full hover:bg-navy transition shadow-lg font-medium">Contact Us</a>
-                </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-heading font-bold text-lg sm:text-3xl leading-none"
+                >
+                  Khayaban Consultants
+                </span>
 
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-white hover:text-blue focus:outline-none transition">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
+                <div class="relative">
+                  <span
+                    class="text-sm sm:text-base inline-block absolute tagline"
+                  >
+                    From Dream to Destination
+                  </span>
                 </div>
-            </div>
+              </div>
+            </span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8 items-center">
+            <a
+              href="#home"
+              class="nav-link text-gray-200 hover:text-blue font-medium transition"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-gray-200 hover:text-blue font-medium transition"
+              >About Us</a
+            >
+            <a
+              href="#universities"
+              class="nav-link text-gray-200 hover:text-blue font-medium transition"
+              >Universities</a
+            >
+            <a
+              href="#reviews"
+              class="nav-link text-gray-200 hover:text-blue font-medium transition"
+              >Reviews</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-200 hover:text-blue font-medium transition"
+              >Services</a
+            >
+            <a
+              href="https://forms.gle/Xk86qP4LcqDXzwx99"
+              class="bg-blue text-white px-5 py-2 rounded-full hover:bg-navy transition shadow-lg font-medium"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-white hover:text-blue focus:outline-none transition"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
         </div>
+      </div>
 
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md">Home</a>
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md">About Us</a>
-                <a href="#universities" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md">Universities</a>
-                <a href="#reviews" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md">Reviews</a>
-                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md">Services</a>
-                <a href="https://forms.gle/Xk86qP4LcqDXzwx99" class="block px-3 py-2 text-base font-medium text-blue font-bold hover:bg-gray-50 rounded-md">Contact Us</a>
-            </div>
+      <!-- Mobile Menu Panel -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#home"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md"
+            >About Us</a
+          >
+          <a
+            href="#universities"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md"
+            >Universities</a
+          >
+          <a
+            href="#reviews"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md"
+            >Reviews</a
+          >
+          <a
+            href="#services"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue hover:bg-gray-50 rounded-md"
+            >Services</a
+          >
+          <a
+            href="https://forms.gle/Xk86qP4LcqDXzwx99"
+            class="block px-3 py-2 text-base font-medium text-blue font-bold hover:bg-gray-50 rounded-md"
+            >Contact Us</a
+          >
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
-        <div class="max-w-4xl mx-auto text-white pt-20">
-            <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-                Your Gateway to <br> <span class="text-blue">Education in Türkiye</span>
-            </h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-200 font-light drop-shadow-lg">
-                Expert guidance for students in Pakistan seeking admission in top ranked Turkish universities.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://forms.gle/Xk86qP4LcqDXzwx99" class="bg-blue hover:bg-blue-dark text-white text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl transform hover:scale-105">
-                    Book Consultation
-                </a>
-                <a href="#universities" class="bg-white hover:bg-gray-100 text-navy text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl hover:scale-105">
-                    View Universities
-                </a>
-            </div>
+    <section
+      id="home"
+      class="hero-bg h-screen flex items-center justify-center text-center px-4"
+    >
+      <div class="max-w-4xl mx-auto text-white pt-20">
+        <h1
+          class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight"
+        >
+          Your Gateway to <br />
+          <span class="text-blue">Education in Türkiye</span>
+        </h1>
+        <p
+          class="text-lg md:text-xl mb-10 text-gray-200 font-light drop-shadow-lg"
+        >
+          Expert guidance for students in Pakistan seeking admission in top
+          ranked Turkish universities.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://forms.gle/Xk86qP4LcqDXzwx99"
+            class="bg-blue hover:bg-blue-dark text-white text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl transform hover:scale-105"
+          >
+            Book Consultation
+          </a>
+          <a
+            href="#universities"
+            class="bg-white hover:bg-gray-100 text-navy text-lg font-semibold py-3 px-8 rounded-full transition shadow-xl hover:scale-105"
+          >
+            View Universities
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Stats Section -->
     <section class="py-10 bg-navy text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-heading font-bold mb-2 text-blue">10+</div>
-                    <div class="text-gray-300">Years Experience</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-heading font-bold mb-2 text-blue">500+</div>
-                    <div class="text-gray-300">Visas Granted</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-heading font-bold mb-2 text-blue">30+</div>
-                    <div class="text-gray-300">Partner Unis</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-heading font-bold mb-2 text-blue">100%</div>
-                    <div class="text-gray-300">Dedication</div>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-heading font-bold mb-2 text-blue">
+              10+
             </div>
+            <div class="text-gray-300">Years Experience</div>
+          </div>
+          <div>
+            <div class="text-4xl font-heading font-bold mb-2 text-blue">
+              500+
+            </div>
+            <div class="text-gray-300">Visas Granted</div>
+          </div>
+          <div>
+            <div class="text-4xl font-heading font-bold mb-2 text-blue">
+              30+
+            </div>
+            <div class="text-gray-300">Partner Unis</div>
+          </div>
+          <div>
+            <div class="text-4xl font-heading font-bold mb-2 text-blue">
+              100%
+            </div>
+            <div class="text-gray-300">Dedication</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Partner Universities Section -->
     <section id="universities" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4">Our Partner Universities</h2>
-                <div class="w-24 h-1 bg-blue mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    We proudly represent the following prestigious institutions in Türkiye. Click on any university to visit their official website.
-                </p>
-            </div>
-
-            <!-- University Grid -->
-            <!-- Note: I have set the ratio for logos. You can replace the src links with real logos later. -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                
-                <!-- 1. Bahcesehir University -->
-                <a href="https://bau.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Bau.png" alt="Bahcesehir University" class="uni-logo">
-                    <span class="uni-name">Bahcesehir University</span>
-                </a>
-
-                <!-- 2. Istanbul Ticaret University -->
-                <a href="https://www.ticaret.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/ticaret.png" alt="Istanbul Ticaret University" class="uni-logo">
-                    <span class="uni-name">Istanbul Ticaret University</span>
-                </a>
-
-                <!-- 3. Istanbul Aydin University -->
-                <a href="https://www.aydin.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Aydin.png" alt="Istanbul Aydin University" class="uni-logo">
-                    <span class="uni-name">Istanbul Aydin University</span>
-                </a>
-
-                <!-- 4. Ozyegin University -->
-                <a href="https://www.ozyegin.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/ozyegin.png" alt="Ozyegin University" class="uni-logo">
-                    <span class="uni-name">Ozyegin University</span>
-                </a>
-
-                <!-- 5. Istanbul Kent University -->
-                <a href="https://www.kent.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Istanbul Kent.png" alt="Istanbul Kent University" class="uni-logo">
-                    <span class="uni-name">Istanbul Kent University</span>
-                </a>
-
-                <!-- 6. Halic University -->
-                <a href="https://halic.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Halic.png" alt="Halic University" class="uni-logo">
-                    <span class="uni-name">Halic University</span>
-                </a>
-
-                <!-- 7. Beykoz University -->
-                <a href="https://www.beykoz.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Beykoz.png" alt="Beykoz University" class="uni-logo">
-                    <span class="uni-name">Beykoz University</span>
-                </a>
-
-                <!-- 8. Istanbul Okan University -->
-                <a href="https://www.okan.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Okan.png" alt="Istanbul Okan University" class="uni-logo">
-                    <span class="uni-name">Istanbul Okan University</span>
-                </a>
-
-                <!-- 9. Fenerbahce University -->
-                <a href="https://www.fbu.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Fenerbahce.png" alt="Fenerbahce University" class="uni-logo">
-                    <span class="uni-name">Fenerbahce University</span>
-                </a>
-
-                <!-- 10. Biruni University -->
-                <a href="https://www.biruni.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Biruni.png" alt="Biruni University" class="uni-logo">
-                    <span class="uni-name">Biruni University</span>
-                </a>
-
-                <!-- 11. Kadir Has University -->
-                <a href="https://www.khas.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Kadir Has.png" alt="Kadir Has University" class="uni-logo">
-                    <span class="uni-name">Kadir Has University</span>
-                </a>
-
-                <!-- 12. Istanbul Kultur University -->
-                <a href="https://www.iku.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Istanbul Kultur.png" alt="Istanbul Kultur University" class="uni-logo">
-                    <span class="uni-name">Istanbul Kultur University</span>
-                </a>
-
-                <!-- 13. Altinbas University -->
-                <a href="https://www.altinbas.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/altinbas.png" alt="Altinbas University" class="uni-logo">
-                    <span class="uni-name">Altinbas University</span>
-                </a>
-
-                <!-- 14. Istinye University -->
-                <a href="https://www.istinye.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Istinye.png" alt="Istinye University" class="uni-logo">
-                    <span class="uni-name">Istinye University</span>
-                </a>
-
-                <!-- 15. Istanbul Gelisim University -->
-                <a href="https://www.gelisim.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Istanbul Gelisim.png" alt="Istanbul Gelisim University" class="uni-logo">
-                    <span class="uni-name">Istanbul Gelisim University</span>
-                </a>
-
-                <!-- 16. Isik University -->
-                <a href="https://www.isikun.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/isik.png" alt="Isik University" class="uni-logo">
-                    <span class="uni-name">Isik University</span>
-                </a>
-
-                <!-- 17. Istanbul Arel University -->
-                <a href="https://www.arel.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Istanbul Arel.png" alt="Istanbul Arel University" class="uni-logo">
-                    <span class="uni-name">Istanbul Arel University</span>
-                </a>
-
-                <!-- 18. Istanbul Medipol University -->
-                <a href="https://www.medipol.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Medipol.png" alt="Istanbul Medipol University" class="uni-logo">
-                    <span class="uni-name">Istanbul Medipol University</span>
-                </a>
-
-                <!-- 19. Istanbul Uskudar University -->
-                <a href="https://uskudar.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Uskudar.png" alt="Istanbul Uskudar University" class="uni-logo">
-                    <span class="uni-name">Istanbul Uskudar University</span>
-                </a>
-
-                <!-- 20. Istanbul Atlas University -->
-                <a href="https://www.atlas.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Atlas U.png" alt="Istanbul Atlas University" class="uni-logo">
-                    <span class="uni-name">Istanbul Atlas University</span>
-                </a>
-
-                <!-- 21. Istanbul Beykent University -->
-                <a href="https://www.beykent.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Beykent.png" alt="Istanbul Beykent University" class="uni-logo">
-                    <span class="uni-name">Istanbul Beykent University</span>
-                </a>
-
-                <!-- 22. Istanbul Nisantasi University -->
-                <a href="https://www.nisantasi.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Nisantasi.png" alt="Istanbul Nisantasi University" class="uni-logo">
-                    <span class="uni-name">Istanbul Nisantasi University</span>
-                </a>
-
-                <!-- 23. Antalya Bilim University -->
-                <a href="https://www.antalya.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Antalya Bilim.png" alt="Antalya Bilim University" class="uni-logo">
-                    <span class="uni-name">Antalya Bilim University</span>
-                </a>
-
-                <!-- 24. Ankara Medipol University -->
-                <a href="https://ankaramedipol.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Ankara Medipol.png" alt="Ankara Medipol University" class="uni-logo">
-                    <span class="uni-name">Ankara Medipol University</span>
-                </a>
-
-                <!-- 25. Cyprus Aydin University -->
-                <a href="https://international.cau.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Cyprus Aydin.png" alt="Cyprus Aydin University" class="uni-logo">
-                    <span class="uni-name">Cyprus Aydin University</span>
-                </a>
-
-                <!-- 26. Sabanci University -->
-                <a href="https://www.sabanciuniv.edu/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Sabanci.png" alt="Sabanci University" class="uni-logo">
-                    <span class="uni-name">Sabanci University</span>
-                </a>
-
-                <!-- 27. Alanya University -->
-                <a href="https://www.alanyauniversity.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Alanya.png" alt="Alanya University" class="uni-logo">
-                    <span class="uni-name">Alanya University</span>
-                </a>
-
-                <!-- 28. Istanbul Yeni Yuzyil University -->
-                <a href="https://www.yeniyuzyil.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/yeni.png" alt="Istanbul Yeni Yuzyil University" class="uni-logo">
-                    <span class="uni-name">Istanbul Yeni Yuzyil University</span>
-                </a>
-
-                <!-- 29. Yasar University -->
-                <a href="https://www.yasar.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/Yasar.png" alt="Yasar University" class="uni-logo">
-                    <span class="uni-name">Yasar University</span>
-                </a>
-                <!-- 30. Ted University -->
-                <a href="https://www.tedu.edu.tr/" rel="noopener noreferrer" target="_blank" class="uni-box group">
-                    <img src="assets/universities/ted.png" alt="Ted University" class="uni-logo">
-                    <span class="uni-name">Ted University</span>
-                </a>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4"
+          >
+            Our Partner Universities
+          </h2>
+          <div class="w-24 h-1 bg-blue mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We proudly represent the following prestigious institutions in
+            Türkiye. Click on any university to visit their official website.
+          </p>
         </div>
+
+        <!-- University Grid -->
+        <!-- Note: I have set the ratio for logos. You can replace the src links with real logos later. -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+        >
+          <!-- 1. Bahcesehir University -->
+          <a
+            href="https://bau.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Bau.png"
+              alt="Bahcesehir University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Bahcesehir University</span>
+          </a>
+
+          <!-- 2. Istanbul Ticaret University -->
+          <a
+            href="https://www.ticaret.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/ticaret.png"
+              alt="Istanbul Ticaret University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Ticaret University</span>
+          </a>
+
+          <!-- 3. Istanbul Aydin University -->
+          <a
+            href="https://www.aydin.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Aydin.png"
+              alt="Istanbul Aydin University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Aydin University</span>
+          </a>
+
+          <!-- 4. Ozyegin University -->
+          <a
+            href="https://www.ozyegin.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/ozyegin.png"
+              alt="Ozyegin University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Ozyegin University</span>
+          </a>
+
+          <!-- 5. Istanbul Kent University -->
+          <a
+            href="https://www.kent.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Istanbul Kent.png"
+              alt="Istanbul Kent University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Kent University</span>
+          </a>
+
+          <!-- 6. Halic University -->
+          <a
+            href="https://halic.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Halic.png"
+              alt="Halic University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Halic University</span>
+          </a>
+
+          <!-- 7. Beykoz University -->
+          <a
+            href="https://www.beykoz.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Beykoz.png"
+              alt="Beykoz University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Beykoz University</span>
+          </a>
+
+          <!-- 8. Istanbul Okan University -->
+          <a
+            href="https://www.okan.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Okan.png"
+              alt="Istanbul Okan University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Okan University</span>
+          </a>
+
+          <!-- 9. Fenerbahce University -->
+          <a
+            href="https://www.fbu.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Fenerbahce.png"
+              alt="Fenerbahce University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Fenerbahce University</span>
+          </a>
+
+          <!-- 10. Biruni University -->
+          <a
+            href="https://www.biruni.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Biruni.png"
+              alt="Biruni University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Biruni University</span>
+          </a>
+
+          <!-- 11. Kadir Has University -->
+          <a
+            href="https://www.khas.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Kadir Has.png"
+              alt="Kadir Has University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Kadir Has University</span>
+          </a>
+
+          <!-- 12. Istanbul Kultur University -->
+          <a
+            href="https://www.iku.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Istanbul Kultur.png"
+              alt="Istanbul Kultur University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Kultur University</span>
+          </a>
+
+          <!-- 13. Altinbas University -->
+          <a
+            href="https://www.altinbas.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/altinbas.png"
+              alt="Altinbas University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Altinbas University</span>
+          </a>
+
+          <!-- 14. Istinye University -->
+          <a
+            href="https://www.istinye.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Istinye.png"
+              alt="Istinye University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istinye University</span>
+          </a>
+
+          <!-- 15. Istanbul Gelisim University -->
+          <a
+            href="https://www.gelisim.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Istanbul Gelisim.png"
+              alt="Istanbul Gelisim University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Gelisim University</span>
+          </a>
+
+          <!-- 16. Isik University -->
+          <a
+            href="https://www.isikun.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/isik.png"
+              alt="Isik University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Isik University</span>
+          </a>
+
+          <!-- 17. Istanbul Arel University -->
+          <a
+            href="https://www.arel.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Istanbul Arel.png"
+              alt="Istanbul Arel University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Arel University</span>
+          </a>
+
+          <!-- 18. Istanbul Medipol University -->
+          <a
+            href="https://www.medipol.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Medipol.png"
+              alt="Istanbul Medipol University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Medipol University</span>
+          </a>
+
+          <!-- 19. Istanbul Uskudar University -->
+          <a
+            href="https://uskudar.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Uskudar.png"
+              alt="Istanbul Uskudar University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Uskudar University</span>
+          </a>
+
+          <!-- 20. Istanbul Atlas University -->
+          <a
+            href="https://www.atlas.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Atlas U.png"
+              alt="Istanbul Atlas University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Atlas University</span>
+          </a>
+
+          <!-- 21. Istanbul Beykent University -->
+          <a
+            href="https://www.beykent.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Beykent.png"
+              alt="Istanbul Beykent University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Beykent University</span>
+          </a>
+
+          <!-- 22. Istanbul Nisantasi University -->
+          <a
+            href="https://www.nisantasi.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Nisantasi.png"
+              alt="Istanbul Nisantasi University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Nisantasi University</span>
+          </a>
+
+          <!-- 23. Antalya Bilim University -->
+          <a
+            href="https://www.antalya.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Antalya Bilim.png"
+              alt="Antalya Bilim University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Antalya Bilim University</span>
+          </a>
+
+          <!-- 24. Ankara Medipol University -->
+          <a
+            href="https://ankaramedipol.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Ankara Medipol.png"
+              alt="Ankara Medipol University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Ankara Medipol University</span>
+          </a>
+
+          <!-- 25. Cyprus Aydin University -->
+          <a
+            href="https://international.cau.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Cyprus Aydin.png"
+              alt="Cyprus Aydin University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Cyprus Aydin University</span>
+          </a>
+
+          <!-- 26. Sabanci University -->
+          <a
+            href="https://www.sabanciuniv.edu/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Sabanci.png"
+              alt="Sabanci University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Sabanci University</span>
+          </a>
+
+          <!-- 27. Alanya University -->
+          <a
+            href="https://www.alanyauniversity.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Alanya.png"
+              alt="Alanya University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Alanya University</span>
+          </a>
+
+          <!-- 28. Istanbul Yeni Yuzyil University -->
+          <a
+            href="https://www.yeniyuzyil.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/yeni.png"
+              alt="Istanbul Yeni Yuzyil University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Istanbul Yeni Yuzyil University</span>
+          </a>
+
+          <!-- 29. Yasar University -->
+          <a
+            href="https://www.yasar.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/Yasar.png"
+              alt="Yasar University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Yasar University</span>
+          </a>
+          <!-- 30. Ted University -->
+          <a
+            href="https://www.tedu.edu.tr/"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="uni-box group"
+          >
+            <img
+              src="assets/universities/ted.png"
+              alt="Ted University"
+              class="uni-logo"
+            />
+            <span class="uni-name">Ted University</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Reviews Section (NEW) -->
     <section id="reviews" class="py-20 bg-neutral-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4">Student Success Stories</h2>
-                <div class="w-24 h-1 bg-blue mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Hear from our students who are currently living their dreams in Türkiye.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                
-                <!-- Review 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 flex text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">"Khayaban Consultants made my dream of studying Engineering in Istanbul a reality. The visa process was so smooth!"</p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3">
-                            A
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-navy text-sm">Ali Khan</h4>
-                            <p class="text-xs text-gray-500">Istanbul Aydin University</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 flex text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">"I was confused about which university to choose. Their team guided me to Bahcesehir University and I love it here."</p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3">
-                            S
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-navy text-sm">Sara Ahmed</h4>
-                            <p class="text-xs text-gray-500">Bahcesehir University</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 flex text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">"Excellent service! They helped me get a 50% scholarship. Highly recommended for students in Hyderabad."</p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3">
-                            M
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-navy text-sm">Mohsin Raza</h4>
-                            <p class="text-xs text-gray-500">Medipol University</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4"
+          >
+            Student Success Stories
+          </h2>
+          <div class="w-24 h-1 bg-blue mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Hear from our students who are currently living their dreams in
+            Türkiye.
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Review 1 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "Khayaban Consultants made my dream of studying Engineering in
+              Istanbul a reality. The visa process was so smooth!"
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3"
+              >
+                A
+              </div>
+              <div>
+                <h4 class="font-bold text-navy text-sm">Ali Khan</h4>
+                <p class="text-xs text-gray-500">Istanbul Aydin University</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "I was confused about which university to choose. Their team
+              guided me to Bahcesehir University and I love it here."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3"
+              >
+                S
+              </div>
+              <div>
+                <h4 class="font-bold text-navy text-sm">Sara Ahmed</h4>
+                <p class="text-xs text-gray-500">Bahcesehir University</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "Excellent service! They helped me get a 50% scholarship. Highly
+              recommended for students in Hyderabad."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold mr-3"
+              >
+                M
+              </div>
+              <div>
+                <h4 class="font-bold text-navy text-sm">Mohsin Raza</h4>
+                <p class="text-xs text-gray-500">Medipol University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4">Our Services</h2>
-                <div class="w-24 h-1 bg-blue mx-auto"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm">
-                        <i class="fas fa-university text-2xl "></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold mb-3 text-navy">Turkish University Admissions</h3>
-                    <p class="text-gray-600">We help you secure your spot in Türkiye's top-ranked public and private universities with scholarship opportunities.</p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm">
-                        <i class="fas fa-passport text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold mb-3 text-navy">Student Visa Assistance</h3>
-                    <p class="text-gray-600">Complete guidance on Turkish student visa requirements, documentation, and residence permit applications.</p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm">
-                        <i class="fas fa-briefcase text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold mb-3 text-navy">Career & TOMER Guidance</h3>
-                    <p class="text-gray-600">Support with Turkish language courses (TOMER) and career pathways in Türkiye and Europe.</p>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-navy mb-4"
+          >
+            Our Services
+          </h2>
+          <div class="w-24 h-1 bg-blue mx-auto"></div>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm"
+            >
+              <i class="fas fa-university text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-heading font-bold mb-3 text-navy">
+              Turkish University Admissions
+            </h3>
+            <p class="text-gray-600">
+              We help you secure your spot in Türkiye's top-ranked public and
+              private universities with scholarship opportunities.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm"
+            >
+              <i class="fas fa-passport text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-heading font-bold mb-3 text-navy">
+              Student Visa Assistance
+            </h3>
+            <p class="text-gray-600">
+              Complete guidance on Turkish student visa requirements,
+              documentation, and residence permit applications.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-blue mb-6 shadow-sm"
+            >
+              <i class="fas fa-briefcase text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-heading font-bold mb-3 text-navy">
+              Career & TOMER Guidance
+            </h3>
+            <p class="text-gray-600">
+              Support with Turkish language courses (TOMER) and career pathways
+              in Türkiye and Europe.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12">
-                
-                <!-- Contact Info -->
-                <div class="bg-navy text-white p-10 rounded-2xl shadow-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-white opacity-5 rounded-full"></div>
-                    <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-white opacity-5 rounded-full"></div>
-                    
-                    <h2 class="text-3xl font-heading font-bold mb-8 relative z-10">Get In Touch</h2>
-                    
-                    <div class="space-y-8 relative z-10">
-                        <div class="flex items-start">
-                            <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg mb-1">Visit Our Office</h3>
-                                <p class="text-gray-300 leading-relaxed">
-                                    Office No: A8, 2nd Floor,<br>
-                                    Samara Tower, Auto Bhan Road,<br>
-                                    Hyderabad, Pakistan
-                                </p>
-                            </div>
-                        </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div
+            class="bg-navy text-white p-10 rounded-2xl shadow-2xl relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-white opacity-5 rounded-full"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-white opacity-5 rounded-full"
+            ></div>
 
-                        <div class="flex items-start">
-                            <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
-                                <i class="fas fa-phone-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg mb-1">Call Us</h3>
-                                <p class="text-gray-300 mb-2">Tap to call for appointments:</p>
-                                <a href="tel:+923003922398" class="text-2xl font-bold hover:text-blue transition block">
-                                    +92 300 3922398
-                                </a>
-                            </div>
-                        </div>
+            <h2 class="text-3xl font-heading font-bold mb-8 relative z-10">
+              Get In Touch
+            </h2>
 
-                        <div class="flex items-start">
-                            <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
-                                <i class="fas fa-envelope text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg mb-1">Email Us</h3>
-                                <p class="text-gray-300">info@khayabanconsultants.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Social Media -->
-                    <div class="mt-10 relative z-10">
-                        <p class="mb-4 font-medium">Follow us on:</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/khayabanconsultants?igsh=MTZvYmY2NTdzcmF3ZA==" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/khayaban-consultants/" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://wa.me/923003922398" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
+            <div class="space-y-8 relative z-10">
+              <div class="flex items-start">
+                <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
+                  <i class="fas fa-map-marker-alt text-xl"></i>
                 </div>
-
-                <!-- Map / Form -->
-                <div class="flex flex-col h-full">
-                    <div class="bg-neutral-light p-1 rounded-2xl shadow-lg flex-grow h-full min-h-[400px]">
-                        <!-- Embedded Google Map -->
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.827263129521!2d68.3358133!3d25.3771051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7141c46742c3%3A0x7edfd3900434d6ee!2sKhayaban%20Consultants!5e0!3m2!1sen!2s!4v1764144050857!5m2!1sen!2s" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0; border-radius: 1rem;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                        
-                    </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Visit Our Office</h3>
+                  <p class="text-gray-300 leading-relaxed">
+                    Office No: A8, 2nd Floor,<br />
+                    Samara Tower, Auto Bhan Road,<br />
+                    Hyderabad, Pakistan
+                  </p>
                 </div>
+              </div>
 
+              <div class="flex items-start">
+                <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
+                  <i class="fas fa-phone-alt text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Call Us</h3>
+                  <p class="text-gray-300 mb-2">
+                    Tap to call for appointments:
+                  </p>
+                  <a
+                    href="tel:+923003922398"
+                    class="text-2xl font-bold hover:text-blue transition block"
+                  >
+                    +92 300 3922398
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-white/10 p-3 rounded-lg mr-4 text-blue">
+                  <i class="fas fa-envelope text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Email Us</h3>
+                  <p class="text-gray-300">info@khayabanconsultants.com</p>
+                </div>
+              </div>
             </div>
+
+            <!-- Social Media -->
+            <div class="mt-10 relative z-10">
+              <p class="mb-4 font-medium">Follow us on:</p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/khayabanconsultants?igsh=MTZvYmY2NTdzcmF3ZA=="
+                  class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/khayaban-consultants/"
+                  class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/923003922398"
+                  class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-navy transition"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map / Form -->
+          <div class="flex flex-col h-full">
+            <div
+              class="bg-neutral-light p-1 rounded-2xl shadow-lg flex-grow h-full min-h-[400px]"
+            >
+              <!-- Embedded Google Map -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.827263129521!2d68.3358133!3d25.3771051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7141c46742c3%3A0x7edfd3900434d6ee!2sKhayaban%20Consultants!5e0!3m2!1sen!2s!4v1764144050857!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style="border: 0; border-radius: 1rem"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
- <footer class="bg-navy text-gray-300 py-12 border-t border-navy-light">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="bg-navy text-gray-300 py-12 border-t border-navy-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
-            
-            <!-- Logo & Identity Section -->
-            <div class="mb-6 md:mb-0 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left">
-                
-                <!-- Logo Icon -->
-                <!-- 'mx-auto' centers it on mobile. 'md:mx-0' aligns left on desktop. -->
-                <img src="assets/logo-white.png" 
-                     alt="Khayaban Consultants Logo" 
-                     class="h-10 w-auto mb-1 md:mb-0 md:mr-3 mx-auto md:mx-0 block">
-                
-                <!-- Text Group -->
-                <div class="flex flex-col justify-center">
-                    <!-- Title: Tight leading to reduce vertical gap -->
-                    <span class="text-3xl font-heading font-bold text-white leading-none tracking-wide">
-                        Khayaban <br class="block md:hidden"> Consultants
-                    </span>
-                </div>
-            </div>
+          <!-- Logo & Identity Section -->
+          <div
+            class="mb-6 md:mb-0 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left"
+          >
+            <!-- Logo Icon -->
+            <!-- 'mx-auto' centers it on mobile. 'md:mx-0' aligns left on desktop. -->
+            <img
+              src="assets/logo-white.png"
+              alt="Khayaban Consultants Logo"
+              class="h-10 w-auto mb-1 md:mb-0 md:mr-3 mx-auto md:mx-0 block"
+            />
 
-            <!-- Links -->
-            <div class="flex space-x-6 text-sm">
-                <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <!-- Text Group -->
+            <div class="flex flex-col justify-center">
+              <!-- Title: Tight leading to reduce vertical gap -->
+              <span
+                class="text-3xl font-heading font-bold text-white leading-none tracking-wide"
+              >
+                Khayaban <br class="block md:hidden" />
+                Consultants
+              </span>
             </div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex space-x-6 text-sm">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+          </div>
         </div>
 
         <!-- Copyright -->
-        <div class="border-t border-navy-light mt-8 pt-8 text-center text-sm text-gray-400">
-            &copy; 2025 Khayaban Consultants. All rights reserved.
+        <div
+          class="border-t border-navy-light mt-8 pt-8 text-center text-sm text-gray-400"
+        >
+          &copy; 2025 Khayaban Consultants. All rights reserved.
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
